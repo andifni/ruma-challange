@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Ruma Internship</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment1_text">You are in Tab A</string>
+    <string name="fragment2_text">You are in Tab B</string>
+    <string name="fragment3_text">You are in Tab C</string>
 </resources>
