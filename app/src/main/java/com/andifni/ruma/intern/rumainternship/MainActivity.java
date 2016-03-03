@@ -9,7 +9,9 @@ import android.widget.Toolbar;
 
 import com.andifni.ruma.intern.rumainternship.Adapter.MainTabAdapter;
 import com.andifni.ruma.intern.rumainternship.Adapter.NoSwipingViewPager;
-
+/**
+ * Created by Andi Fajar on 03/03/2016.
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override

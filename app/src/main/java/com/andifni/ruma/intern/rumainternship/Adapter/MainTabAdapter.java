@@ -24,12 +24,15 @@ public class MainTabAdapter extends FragmentStatePagerAdapter {
         switch (position) {
             case 0:
                 TabFragment tab1 = new TabFragment();
+                tab1.setTabNumber(0);
                 return tab1;
             case 1:
                 TabFragment tab2 = new TabFragment();
+                tab2.setTabNumber(1);
                 return tab2;
             case 2:
                 TabFragment tab3 = new TabFragment();
+                tab3.setTabNumber(2);
                 return tab3;
             default:
                 return null;
