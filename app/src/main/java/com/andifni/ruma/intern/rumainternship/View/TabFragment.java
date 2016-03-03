@@ -37,6 +37,8 @@ public class TabFragment extends Fragment {
         final ImageView icon1 = (ImageView) v.findViewById(R.id.icn1);
         final ImageView icon2 = (ImageView) v.findViewById(R.id.icn2);
         final ImageView icon3 = (ImageView) v.findViewById(R.id.icn3);
+        icon2.setAlpha(70);
+        icon3.setAlpha(70);
 
         switch (page) {
             case 0:
@@ -67,6 +69,8 @@ public class TabFragment extends Fragment {
 
             @Override
             public void onPageSelected(int position) {
+
+                // change icon page indicator
                 switch (position) {
                     case 0:
                         icon1.setAlpha(255);

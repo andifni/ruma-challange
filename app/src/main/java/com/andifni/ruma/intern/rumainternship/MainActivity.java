@@ -5,7 +5,9 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toolbar;
+import android.view.LayoutInflater;
+import android.widget.TextView;
+import android.support.v7.widget.Toolbar;
 
 import com.andifni.ruma.intern.rumainternship.Adapter.MainTabAdapter;
 import com.andifni.ruma.intern.rumainternship.Adapter.NoSwipingViewPager;
@@ -18,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar actionBarToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(actionBarToolbar);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Tab 1"));
@@ -45,5 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
     }
+
+
 }
