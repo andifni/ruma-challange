@@ -3,12 +3,8 @@ package com.andifni.ruma.intern.rumainternship.Adapter;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.app.FragmentTabHost;
-import android.util.Log;
 
-import com.andifni.ruma.intern.rumainternship.View.Tab1Fragment;
-import com.andifni.ruma.intern.rumainternship.View.Tab2Fragment;
-import com.andifni.ruma.intern.rumainternship.View.Tab3Fragment;
+import com.andifni.ruma.intern.rumainternship.View.TabFragment;
 
 /**
  * Created by Andi Fajar on 03/03/2016.
@@ -27,13 +23,13 @@ public class MainTabAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                Tab1Fragment tab1 = new Tab1Fragment();
+                TabFragment tab1 = new TabFragment();
                 return tab1;
             case 1:
-                Tab2Fragment tab2 = new Tab2Fragment();
+                TabFragment tab2 = new TabFragment();
                 return tab2;
             case 2:
-                Tab3Fragment tab3 = new Tab3Fragment();
+                TabFragment tab3 = new TabFragment();
                 return tab3;
             default:
                 return null;

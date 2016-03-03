@@ -10,12 +10,12 @@ import android.view.ViewGroup;
 import com.andifni.ruma.intern.rumainternship.R;
 
 /**
- * A simple {@link Fragment} subclass.
+ * A simple {@link TabFragment} subclass.
  */
-public class Tab3Fragment extends Fragment {
+public class SubTabFragment extends Fragment {
 
 
-    public Tab3Fragment() {
+    public SubTabFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class Tab3Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab3, container, false);
+        return inflater.inflate(R.layout.fragment_sub_tab, container, false);
     }
 
 }
