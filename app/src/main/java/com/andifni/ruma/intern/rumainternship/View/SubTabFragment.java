@@ -34,7 +34,7 @@ public class SubTabFragment extends Fragment {
         TextView textView = (TextView) v.findViewById(R.id.label);
         // avoiding nullpointer
         String text = "A";
-        if (!"A".equals(label)) text = label;
+        if (label!=null && !"".equals(label)) text = label;
 
         textView.setText(text);
         return v;
